@@ -2,6 +2,7 @@
   "name": "camera",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://PriestAtheist.github.io/camera",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,6 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "start:dev-server": "npx nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "nodemon": "^3.0.1"
   }
 }
