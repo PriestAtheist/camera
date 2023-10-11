@@ -7,6 +7,6 @@ const options = {
     transports: ["websocket"]
 }
 
-const socket = io('http://priestatheist.github.io/camera/:3001', options);
+const socket = io('https://priestatheist.github.io/camera/', options);
 
 export default socket;
