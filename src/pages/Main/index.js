@@ -26,14 +26,14 @@ export default function Main() {
           <li key={roomID}>
             {roomID}
             <button onClick={() => {
-              history(`/camera/room/${roomID}`);
+              history(`/room/${roomID}`);
             }}>JOIN ROOM</button>
           </li>
         ))}
       </ul>
 
       <button onClick={() => {
-        history(`/camera/room/${v4()}`);
+        history(`/room/${v4()}`);
       }}>Create New Room</button>
     </div>
   );

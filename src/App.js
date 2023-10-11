@@ -8,9 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path ="/camera/room/:id" element={<Room/>}/>
-        <Route path ="/camera/" element={<Main/>}/>
-        <Route path ="/camera/*" element={<NotFound404/>}/>
+        <Route path ="room/:id" element={<Room/>}/>
+        <Route path ="/" element={<Main/>}/>
+        <Route path ="*" element={<NotFound404/>}/>
       </Routes>
     </BrowserRouter>
   );
